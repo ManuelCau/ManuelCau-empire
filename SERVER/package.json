@@ -1,0 +1,40 @@
+{
+  "name": "mcserver",
+  "version": "1.0.0",
+  "description": "Server for my app",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "Manuel Cau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManuelCau/ManuelCau-empire.git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ManuelCau/ManuelCau-empire.git"
+  },
+  "homepage": "https://github.com/ManuelCau/ManuelCau-empire.git#readme",
+  "dependencies": {
+    "dot-env": "^0.0.1",
+    "express": "^4.21.0",
+    "express-async-errors": "^3.1.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.5.5",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "type": "module"
+}
