@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc",
     "start": "node dist/server.js",
-    "dev": "nodemon src/server.ts"
+    "dev": "concurrently -k \"npx tsc --watch\" \"wait-on dist/server.js && nodemon dist/server.js\""
   },
   "keywords": [
     "server"
@@ -23,18 +23,22 @@
   },
   "homepage": "https://github.com/ManuelCau/ManuelCau-empire.git#readme",
   "dependencies": {
-    "dot-env": "^0.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "express-async-errors": "^3.1.1",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.5.5",
+    "concurrently": "^9.0.1",
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.2",
+    "wait-on": "^8.0.1"
   },
   "type": "module"
 }
