@@ -6,8 +6,10 @@ import express from "express";
 import "express-async-errors";
 import morgan from "morgan";
 import cors from "cors";
+import { env } from "./utils/env.js"
 
-const { API_PORT_NUMBER, CLIENT_URL } = process.env;
+
+const { API_PORT_NUMBER, CLIENT_URL } = env;
 
 const server = express();
 
