@@ -19,9 +19,15 @@ async function setupDB (){
 
             INSERT INTO users (username)
             VALUES ('Manuel');
-            
+
             `)
+
+            
     }catch (error){
         throw new Error("Issues with the database setup")
     }
 }
+
+setupDB()
+
+export { db }
