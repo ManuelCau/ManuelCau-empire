@@ -6,8 +6,10 @@ import express from "express";
 import "express-async-errors";
 import morgan from "morgan";
 import cors from "cors";
+import { env } from "./utils/env.js"
+import { getUsers } from "./controllers/users.js"
 
-const { API_PORT_NUMBER, CLIENT_URL } = process.env;
+const { API_PORT_NUMBER, CLIENT_URL } = env;
 
 const server = express();
 
@@ -20,9 +22,7 @@ server.use(
   })
 );
 
-server.get("/test", (req, res) => {
-  res.status(200).json({ msg: "Server is working!" });
-});
+server.get("/test", getUsers);
 
 server.listen(API_PORT_NUMBER, () => {
   console.log(`Server API listening on port ${API_PORT_NUMBER}`);
