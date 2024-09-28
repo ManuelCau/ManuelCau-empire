@@ -1,16 +1,46 @@
 .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
- 
-}
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  margin: 50px auto;
+  box-sizing: border-box;
 
-.parag {
-  max-width: 30%;
-  text-justify: inter-character;
-  padding: 50px;
-  margin: 50px;
-}
-.show-button {
-  background-color: rgb(15, 23, 47);
-  padding: 50px;
-  margin: 50px;
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1024px) {
+  }
+
+  p {
+    max-width: 40%;
+    text-align: justify;
+  }
+  button {
+    background-color: rgb(15, 23, 47);
+    color: white;
+    font-family: Raleway-Semibold;
+    padding: 10px 15px;
+    margin-top: 30px;
+    display: flex;
+    border-radius: 10px;
+  }
+
+  img {
+    display: flex;
+    width: 20%;
+    margin-right: 25%;
+  }
+
+  .caption-banner {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+  }
 }
