@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Raleway;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(./assets/fonts/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: Raleway-Black;
+  src: url(./assets/fonts/Raleway-Black.ttf);
+}
+@font-face {
+  font-family: Raleway-BlackItalic;
+  src: url(./assets/fonts/Raleway-BlackItalic.ttf);
+}
+@font-face {
+  font-family: Raleway-Bold;
+  src: url(./assets/fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: Raleway-BoldItalic;
+  src: url(./assets/fonts/Raleway-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Raleway-Italic;
+  src: url(./assets/fonts/Raleway-Italic.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Light;
+  src: url(./assets/fonts/Raleway-Light.ttf);
+}
+
+@font-face {
+  font-family: Raleway-LightItalic;
+  src: url(./assets/fonts/Raleway-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Medium;
+  src: url(./assets/fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: Raleway-MediumItalic;
+  src: url(./assets/fonts/Raleway-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: Raleway-Semibold;
+  src: url(./assets/fonts/Raleway-SemiBold.ttf);
+}
+@font-face {
+  font-family: Raleway-SemiboldItalic;
+  src: url(./assets/fonts/Raleway-SemiBoldItalic.ttf);
+}
+
+@import url(./Style/nav.scss);
+@import url(./Style/home.scss);
+@import url(./Style/banner.scss);

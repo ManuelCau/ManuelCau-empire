@@ -1,0 +1,88 @@
+import { Link } from "react-router-dom";
+
+export function Navbar() {
+  return (
+    <div className="head">
+      <div className="nav-wave">
+        <svg
+          width="1440"
+          height="224"
+          viewBox="0 0 1440 224"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_d_13_127)">
+            <path
+              d="M1445 115.536C610.398 -14.4421 458.561 323.501 -6 115.536V0H1445V115.536Z"
+              fill="#006269"
+            />
+            <path
+              d="M1444.38 119.488L1449 120.207V115.536V0V-4H1445H-6H-10V0V115.536V118.128L-7.63435 119.187C108.997 171.398 206.153 189.402 299.357 188.993C392.365 188.585 481.314 169.831 581.318 148.746L581.56 148.695L581.585 148.69C781.738 106.489 1027.8 54.6104 1444.38 119.488Z"
+              stroke="white"
+              stroke-width="8"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_d_13_127"
+              x="-25.1"
+              y="-8"
+              width="1489.2"
+              height="231.1"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feColorMatrix
+                in="SourceAlpha"
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                result="hardAlpha"
+              />
+              <feOffset dy="19" />
+              <feGaussianBlur stdDeviation="5.55" />
+              <feComposite in2="hardAlpha" operator="out" />
+              <feColorMatrix
+                type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0"
+              />
+              <feBlend
+                mode="normal"
+                in2="BackgroundImageFix"
+                result="effect1_dropShadow_13_127"
+              />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="effect1_dropShadow_13_127"
+                result="shape"
+              />
+            </filter>
+          </defs>
+        </svg>
+      </div>
+      <div>
+        <div className="navbar">
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/">About me</Link>
+            </li>
+            <li>
+              <Link to="/">Graphics</Link>
+            </li>
+            <li>
+              <Link to="/">Coding</Link>
+            </li>
+            <li>
+              <Link to="/">Contacts</Link>
+            </li>
+          </ul>
+          <div className="nav-line"></div>
+        </div>
+      </div>
+    </div>
+  );
+}
