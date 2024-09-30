@@ -1,0 +1,44 @@
+/* Background delle onde */
+.bg1,
+.bg2 {
+  gap: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh; 
+  z-index: -1;
+  background: url("../assets/IMG/wave.png") repeat; 
+  background-size: 100px 50px; 
+}
+
+.bg1 {
+  animation: moveWave1 5s linear infinite; 
+  background-position: 0 0; 
+  opacity: 0.5;
+}
+
+.bg2 {
+  animation: moveWave2 7s linear infinite; 
+  opacity: 0.4; 
+  background-position: 0 10px; 
+}
+
+/* Animazione delle onde */
+@keyframes moveWave1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -200px 0; 
+  }
+}
+
+@keyframes moveWave2 {
+  0% {
+    background-position: 0 10px;  
+  }
+  100% {
+    background-position: 200px 10px;  
+  }
+}

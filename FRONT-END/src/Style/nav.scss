@@ -1,0 +1,73 @@
+.head {
+  background-color: rgb(15, 23, 47);
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-wave {
+  display: flex;
+  margin-bottom: 60px;
+  padding: 0;
+  width: 100vw;
+
+  svg {
+    width: 100%;
+  }
+}
+
+/* Stile base per la navbar */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+
+  ul {
+    display: flex;
+    gap: 80px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+
+    a.active {
+      font-weight: bold;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%; /* Posizionamento centrato */
+      bottom: -4px; /* Distanza sotto il link */
+      height: 3px;
+      width: 0;
+      background-color: rgb(255, 255, 255); /* Colore della linea chiara */
+      transform: translateX(-50%); /* Centra la linea rispetto al link */
+      transition: width 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      width: 150%;
+    }
+  }
+}
+
+/* Linea fissa sotto l'intera navbar */
+.nav-line {
+  margin-top: 8px;
+  height: 1px;
+  width: calc(110% - 50%); /* La larghezza totale meno il gap */
+  background-color: rgba(255, 255, 255, 0.847);
+}

@@ -1,0 +1,24 @@
+
+  
+  .g-bannerbox {
+    margin: 20px;
+  }
+  
+  .graphics-banner-home {
+    width: 400px;
+    height: 300px;
+    
+    img {
+      border-radius: 30% 78% 32% 68% / 51% 63% 27% 39%;  
+    }
+  }
+  
+  .home-banners {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    top: 60px;
+    overflow: visible; /* Permette agli elementi di non essere tagliati */
+    padding-bottom: 50px; /* Aggiunge un po' di spazio in fondo per evitare tagli */
+  }
+  
