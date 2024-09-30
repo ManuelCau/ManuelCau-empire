@@ -1,8 +1,11 @@
-.back-home{
-    background-color: rgb(15, 23, 47);
-    width: 100vw;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;       
-    flex-direction: column; 
+.back-home {
+  background-color: rgb(15, 23, 47);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: -1;
+  flex-direction: column;
+  position: relative;
+  overflow:visible;
 }
