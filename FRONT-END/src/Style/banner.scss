@@ -2,12 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-items: center;
   background-color: white;
   width: 100%;
   height: auto;
   padding: 50px;
   margin: 50px auto;
   box-sizing: border-box;
+  gap:50px;
 
   /*   @media (min-width: 768px) {
   }
@@ -28,12 +30,16 @@
     display: flex;
     border-radius: 10px;
   }
-
+button:is(:hover, :focus){
+  font-weight: bolder;
+}
   img {
     display: flex;
     width: 20%;
-    margin-right: 25%;
+max-width: 300px;
   }
+
+
 
   .caption-banner {
     display: flex;
@@ -41,6 +47,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px;
+    
   }
 }
