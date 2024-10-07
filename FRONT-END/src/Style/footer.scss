@@ -1,0 +1,23 @@
+
+
+.footer {
+  background-color: rgb(0, 98, 105);
+  display: flex;
+  padding: 80px;
+  gap: 100px;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+
+  p {
+    font-family: Raleway-Semibold;
+  }
+  li {
+    font-size: smaller;
+    padding: 5px;
+  }
+}
+
+img {
+  width: 100%;
+}
