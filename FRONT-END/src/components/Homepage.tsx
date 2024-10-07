@@ -1,5 +1,4 @@
 import { CodeBannerHome } from "./CodeBannerHome";
-import { ContactForm } from "./ContactForm";
 import { GraphicBannerHome } from "./GraphicsBannerHome";
 import { HomeBanner } from "./HomeBanner";
 import { Waves } from "./Waves";
@@ -15,7 +14,7 @@ export function Homepage() {
         <GraphicBannerHome />
         <CodeBannerHome />
       </div>
-      <ContactForm/>
+      
     </div>
   );
 }

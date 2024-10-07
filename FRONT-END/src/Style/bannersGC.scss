@@ -1,71 +1,48 @@
-.graphic-banner-home {
-  width: 400px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  
-  margin-bottom: 50px;
-  img {
-    border-radius: 30px;
-    width: 400px;
-    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.377);
-  }
-}
 
+.home-banners{
+  display: flex;
+  gap: 50px;
+}
+.graphic-banner-home,
 .code-banner-home {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   display: flex;
-  justify-content: center;
- 
-  margin-bottom: 50px;
-  img {
-    display: flex;
-    border-radius: 30px;
-    width: 400px;
-    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.377);
-  }
-}
-
-.home-banners {
-  display: flex;
-  gap: 220px;
+  position: relative;  
   justify-content: center;
   align-items: center;
-  position: relative;
-  overflow: visible; /* Permette agli elementi di non essere tagliati */
-  padding-bottom: 50px; /* Aggiunge un po' di spazio in fondo per evitare tagli */
-}
-
-.c-button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-family: Raleway-Semibold;
-  padding: 10px 15px;
-  margin-top: 30px;
-  display: flex;
-  border-radius: 10px;
-  position: absolute;
-  right: 150px;
-  top: 200px;
-}
-
-.g-button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-family: Raleway-Semibold;
-  padding: 10px 15px;
-  margin-top: 30px;
-  display: flex;
-  border-radius: 10px;
-  position: absolute;
-  left: 150px;
-  top: 200px;
-}
-
-.c-button:hover,
-.g-button:hover {
-  padding: 20px;
-  font-weight: bolder;
+  margin-bottom: 50px;
  
+}
+
+.graphic-banner-home img,
+.code-banner-home img {
+  border-radius: 30px; 
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.377);
+  position: relative;  
+  width: 600px;
+  height: 600px;
+ 
+}
+
+.graphic-banner-home button,
+.code-banner-home button {
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  background-color: rgba(255, 255, 255, 0.8);  
+  color: rgb(0, 0, 0);
+  font-family: Raleway-Semibold;
+  padding: 10px 15px;
+  border-radius: 10px;
+  z-index: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.graphic-banner-home button:hover,
+.code-banner-home button:hover {
+  background-color: rgba(255, 255, 255, 1);  
+  transform: translate(-50%, -50%) scale(1.05);  
 }
