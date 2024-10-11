@@ -1,3 +1,19 @@
+/*hamburger menù*/
+.hamburger-menu {
+  background-color: white;
+  display: none;
+  flex-direction: column;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+
+  li:hover {
+    font-weight: bold;
+    background-color: rgb(235, 235, 235);
+    font-size: larger;
+  }
+}
+
 .head {
   background-color: rgb(15, 23, 47);
   padding-bottom: 60px;
@@ -70,4 +86,19 @@
   height: 1px;
   width: calc(110% - 50%); /* La larghezza totale meno il gap */
   background-color: rgba(255, 255, 255, 0.847);
+}
+
+@media screen and (max-width: 480px) {
+  .hamburger-menu {
+    display: flex;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .navbar {
+    display: none;
+  }
 }

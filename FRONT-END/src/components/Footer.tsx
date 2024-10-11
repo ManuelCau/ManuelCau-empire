@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export function Footer() {
   return (
     <div className="footer-box">
-      <img src={ondaF} alt="Onda Footer" /> 
+      <img src={ondaF} alt="Onda Footer" className="ondaF"/> 
       <div className="footer">
         <div className="explore">
           <p>Explore</p>
@@ -25,19 +25,19 @@ export function Footer() {
           <p>Contacts</p>
           <ul>
             <li>
-              <Link to="/">Linkedin</Link>
+              <Link to="https://www.linkedin.com/in/manuelcau10/">Linkedin</Link>
             </li>
             <li>
-              <Link to="/">Instagram</Link>
+              <Link to="https://www.instagram.com/106m_graphix/">Instagram</Link>
             </li>
             <li>
-              <Link to="/">Github</Link>
+              <Link to="https://github.com/ManuelCau">Github</Link>
             </li>
             <li>
-              <Link to="/">Youtube</Link>
+              <Link to="https://www.youtube.com/@manuelcau97">Youtube</Link>
             </li>
             <li>
-              <Link to="/">PaypalMe!</Link>
+              <Link to="https://www.paypal.com/paypalme/manuelcau97">PaypalMe!</Link>
             </li>
           </ul>
         </div>

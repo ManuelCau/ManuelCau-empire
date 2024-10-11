@@ -1,23 +1,56 @@
-
-
 .footer {
   background-color: rgb(0, 98, 105);
   display: flex;
-  padding: 80px;
+  padding-bottom: 80px;
   gap: 100px;
   justify-content: center;
+  align-items: flex-start;
   color: white;
   z-index: 1;
 
   p {
     font-family: Raleway-Semibold;
+    font-size: 18px;
+  }
+  .explore,
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   li {
     font-size: smaller;
     padding: 5px;
+    font-size: 16px;
+  }
+
+  li:hover {
+    font-weight: bolder;
+    animation:tada;
+    animation-duration: 800ms;
   }
 }
 
-img {
+.ondaF {
   width: 100%;
+  background-color: rgb(15, 23, 47);
+}
+
+@media screen and (max-width: 768px) {
+  .ondaF{
+    margin: 0;
+  }
+  .footer{
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ondaF{
+    margin: 0;
+  }
+  .footer{
+    padding-top: 10px;
+  }
 }
