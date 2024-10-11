@@ -5,20 +5,15 @@ export function HomeBanner() {
     <div className="banner">
       <div className="caption-banner">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-          mollit anim id est laborum.
+          Since 2016, I have built a solid experience in graphic design,
+          developing creative and visually impactful solutions. Recently, I
+          completed my journey as a FullStack Developer with DevelHope,
+          expanding my technical skills to design and build dynamic and
+          functional web applications. In addition to graphic design, I work on
+          3D modeling and printing using tools like Blender and Fusion 360,
+          offering innovative and customized solutions. My goal is to combine
+          creativity and technology to develop complete projects, from concept
+          to execution, with attention to detail and the client's needs.
         </p>
 
         <button>

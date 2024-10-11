@@ -4,9 +4,8 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  z-index: -1;
+  z-index: 0;
   flex-direction: column;
   position: relative;
-  z-index: 1;
-  overflow:visible;
+  top: 0;
 }

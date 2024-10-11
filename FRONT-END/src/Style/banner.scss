@@ -7,15 +7,7 @@
   width: 100%;
   height: auto;
   padding: 50px;
-  margin: 50px auto;
-  box-sizing: border-box;
-  gap:50px;
-
-  /*   @media (min-width: 768px) {
-  }
-
-  @media (min-width: 1024px) {
-  } */
+  margin: 40px auto;
 
   p {
     max-width: 40%;
@@ -30,23 +22,67 @@
     display: flex;
     border-radius: 10px;
   }
-button:is(:hover, :focus){
-  font-weight: bolder;
-}
+  button:is(:hover) {
+    font-weight: bolder;
+    animation: heartBeat;
+    animation-duration: 800ms;
+  }
   img {
     display: flex;
-    width: 20%;
-max-width: 300px;
+    max-width: 300px;
   }
-
-
 
   .caption-banner {
     display: flex;
-    width: fit-content;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    width: 40%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    padding:40px;
+  }
+
+  p {
+    min-width: 100%;
+    font-size: 12px;
+  }
+
+  button {
+    margin-top: 15px;
+  }
+  img {
+    width: 70%;
+    margin: 20px;
+  }
+  .caption-banner{
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+    padding:20px;
+  }
+
+  p {
+    min-width: 100%;
+    font-size: 12px;
+  }
+
+  button {
+    margin-top: 15px;
+  }
+  img {
+    width: 0%;
+  }
+  .caption-banner{
+    min-width: 100%;
   }
 }
