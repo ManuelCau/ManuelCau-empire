@@ -3,19 +3,23 @@
   background-color: white;
   display: none;
   flex-direction: column;
-  width: fit-content;
-  padding: 10px;
   border-radius: 10px;
+  
+
+  button {
+    padding: 10px;
+  }
 
   li:hover {
     font-weight: bold;
-    background-color: rgb(235, 235, 235);
+    background-color: rgba(24, 37, 71, 0.747);
+    width: 100%;
     font-size: larger;
   }
 }
 
 .head {
-  background-color: rgb(15, 23, 47);
+  background-color: rgb(4, 11, 31);
   padding-bottom: 60px;
   display: flex;
   flex-direction: column;
@@ -84,21 +88,41 @@
 .nav-line {
   margin-top: 8px;
   height: 1px;
-  width: calc(110% - 50%); /* La larghezza totale meno il gap */
+  width: calc(110% - 50%); /*larghezza totale meno il gap */
   background-color: rgba(255, 255, 255, 0.847);
 }
 
 @media screen and (max-width: 480px) {
   .hamburger-menu {
     display: flex;
+    width: 100%;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(9, 21, 51, 0.747);
+   z-index: 2;
+  
 
+    button {
+      width: fit-content;
+      z-index: 2;
+    }
+    ul {
+      width: 100%;
+    }
     li {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 10px;
+      color: white;
+      border-radius: 10px;
     }
   }
   .navbar {
     display: none;
+  }
+  .head {
+    padding-bottom: 0;
   }
 }

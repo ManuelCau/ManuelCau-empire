@@ -19,17 +19,27 @@ export function Navbar() {
         <button onClick={handleToggleMenu}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-three-dots"
+            width="18"
+            height="18"
+            fill="white"
             viewBox="0 0 16 16"
           >
             <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
           </svg>
         </button>
         {isOpen && (
-          <ul>
+          <ul
+            style={{
+              transition:"width 2s, height 2s",
+              position: "absolute",
+              top: "180px",
+              right: "10px",
+              backgroundColor: "rgba(9, 21, 51, 0.747)",
+              padding: "20px",
+              borderRadius: "10px",
+              
+            }}
+          >
             <li>
               <Link to="/">Home</Link>
             </li>
